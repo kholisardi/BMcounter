@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Badminton Count</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+    "
+    />
+    <link rel="stylesheet" href="css.css" />
+    <style>
+      body {
+        background-color: #0a6f34;
+      }
+
+      @media only screen and (orientation: portrait) {
+        body {
+          height: 100vw;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="court">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>
+        <div id="box4" class="col box4" style="height: 100%; width: auto">
+          4
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+      <div>
+        <div id="box1" class="col box1" style="height: 100%; width: auto">
+          1
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+      <div>
+        <div id="box3" class="col box3" style="height: 100%; width: auto">
+          3
+        </div>
+      </div>
+      <div>
+        <div id="box2" class="col box2" style="height: 100%; width: auto">
+          2
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // BOX 1-----------------------------------
+      document.getElementById("box1").addEventListener("mouseover", mouseOver);
+      document.getElementById("box1").addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        const boxes = document.getElementsByClassName("box1");
+        boxes[0].classList.add("bg-light");
+        // boxes[0].classList.remove("bg-info");
+      }
+
+      function mouseOut() {
+        const boxes = document.getElementsByClassName("box1");
+        // boxes[0].classList.add("bg-info");
+        boxes[0].classList.remove("bg-light");
+      }
+      // end of box 1----------------------------
+    </script>
+
+    <script>
+      // BOX 2-----------------------------------
+      document.getElementById("box2").addEventListener("mouseover", mouseOver);
+      document.getElementById("box2").addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        const boxes = document.getElementsByClassName("box2");
+        boxes[0].classList.add("bg-light");
+        // boxes[0].classList.remove("bg-info");
+      }
+
+      function mouseOut() {
+        const boxes = document.getElementsByClassName("box2");
+        // boxes[0].classList.add("bg-info");
+        boxes[0].classList.remove("bg-light");
+      }
+      // end of box 2----------------------------
+    </script>
+
+    <script>
+      // BOX 3-----------------------------------
+      document.getElementById("box3").addEventListener("mouseover", mouseOver);
+      document.getElementById("box3").addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        const boxes = document.getElementsByClassName("box3");
+        boxes[0].classList.add("bg-light");
+        // boxes[0].classList.remove("bg-info");
+      }
+
+      function mouseOut() {
+        const boxes = document.getElementsByClassName("box3");
+        // boxes[0].classList.add("bg-info");
+        boxes[0].classList.remove("bg-light");
+      }
+      // end of box 3----------------------------
+    </script>
+
+    <script>
+      // BOX 4-----------------------------------
+      document.getElementById("box4").addEventListener("mouseover", mouseOver);
+      document.getElementById("box4").addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        const boxes = document.getElementsByClassName("box4");
+        boxes[0].classList.add("bg-light");
+        // boxes[0].classList.remove("bg-info");
+      }
+
+      function mouseOut() {
+        const boxes = document.getElementsByClassName("box4");
+        // boxes[0].classList.add("bg-info");
+        boxes[0].classList.remove("bg-light");
+      }
+      // end of box 4----------------------------
+    </script>
+  </body>
+</html>
