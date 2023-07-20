@@ -1,8 +1,9 @@
 // Select total count
 const totalCount = document.getElementById("total-count");
+const countdanger = document.getElementById("count-danger");
 
 // Variable to track count
-var count = 26;
+var count = 0;
 var danger;
 let safe;
 
@@ -11,60 +12,61 @@ totalCount.innerHTML = count;
 
 // Function to increment count
 const handleIncrement = () => {
-  if (count > 29) {
-    count = 30;
-  } else {
+  if (count !== 30) {
     count++;
   }
 
-  if (count == 20 || count == 29) {
+  if (count === 20 || count === 29) {
     danger = 1;
-    safe = 0;
+  } else if (count === 21 || count === 30) {
+    danger = 2;
   }
 
   totalCount.innerHTML = count;
-  if (danger) {
+  if (danger == 1) {
     const boxes = document.getElementsByClassName("box");
     boxes[0].classList.add("bg-danger");
+    boxes[0].classList.add("text-light");
     // boxes[0].classList.remove("bg-primary");
+  } else {
+    const boxes = document.getElementsByClassName("box");
+    boxes[0].classList.remove("bg-danger");
+    boxes[0].classList.remove("text-light");
   }
 };
 
 // Function to decrement count
 const handleDecrement = () => {
-  if (count <= 0) {
-    count = 0;
-  } else {
+  if (count > 0) {
     count--;
   }
+
+  if (count == 0 || count === 19) {
+    danger = 2;
+  } else if (count === 20 || count === 29) {
+    danger = 1;
+  } else if (count === 21 || count === 28) {
+    danger = 2;
+  }
+
   totalCount.innerHTML = count;
 
-  if (count <= 19) {
-    safe = 1;
-    danger = 0;
-  }
-  if (count >= 21 || count <= 28) {
-    safe = 1;
-    danger = 0;
-  } else if (count > 28) {
-    danger = 1;
-    safe = 0;
-  }
-
-  if (safe) {
-    const boxes = document.getElementsByClassName("box");
-    // boxes[0].classList.add("bg-success");
-    boxes[0].classList.remove("bg-danger");
-  }
-  if (danger) {
+  if (danger == 1) {
     const boxes = document.getElementsByClassName("box");
     boxes[0].classList.add("bg-danger");
+    boxes[0].classList.add("text-light");
+
     // boxes[0].classList.remove("bg-primary");
+  } else {
+    const boxes = document.getElementsByClassName("box");
+    boxes[0].classList.remove("bg-danger");
+    boxes[0].classList.remove("text-light");
   }
 };
 
 // Function to reset count
 const handleReset = () => {
+  danger = 2;
   count = 0;
   totalCount.innerHTML = count;
 };
