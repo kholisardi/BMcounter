@@ -40,45 +40,73 @@
       #total-count {
         font-size: 20vh;
       }
+      #total-count1 {
+        font-size: 20vh;
+      }
     </style>
   </head>
   <body>
-    <!-- <div class="container">
-      <div id="increment-count">
-        <button type="button" class="btn btn-light">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div id="total-count"></div>
-      <div id="decrement-count">
-        <button type="button" class="btn btn-light">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div> -->
-
     <div class="container">
-      <div class="card" style="width: 18rem">
-        <div id="increment-count">
-          <div class="d-grid">
-            <button type="button" class="btn btn-primary p-3">
-              <i class="fa fa-arrow-up fs-1" aria-hidden="true"></i>
-            </button>
+      <div class="row border border-danger">
+        <div
+          class="col lg-4 border border-warning d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem">
+            <div id="increment-count">
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary p-3">
+                  <i class="fa fa-arrow-up fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="total-count" class="box text-center fw-bold m-2"></div>
+            <div id="decrement-count">
+              <div class="d-grid">
+                <button type="button" class="btn btn-warning p-3">
+                  <i class="fa fa-arrow-down fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="reset">
+              <div class="d-grid mt-2">
+                <button type="button" class="btn btn-danger p-3">
+                  <i class="fa fa-undo fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="total-count" class="box text-center fw-bold m-2"></div>
-        <div id="decrement-count">
-          <div class="d-grid">
-            <button type="button" class="btn btn-warning p-3">
-              <i class="fa fa-arrow-down fs-1" aria-hidden="true"></i>
-            </button>
-          </div>
+
+        <div class="col lg-4 border border-warning">
+          <img src="img/vs.png" class="img-fluid" alt="..." />
         </div>
-        <div id="reset">
-          <div class="d-grid mt-2">
-            <button type="button" class="btn btn-danger p-3">
-              <i class="fa fa-undo fs-1" aria-hidden="true"></i>
-            </button>
+
+        <div
+          class="col lg-4 border border-warning d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem">
+            <div id="increment-count1">
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary p-3">
+                  <i class="fa fa-arrow-up fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="total-count1" class="box1 text-center fw-bold m-2"></div>
+            <div id="decrement-count1">
+              <div class="d-grid">
+                <button type="button" class="btn btn-warning p-3">
+                  <i class="fa fa-arrow-down fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="reset1">
+              <div class="d-grid mt-2">
+                <button type="button" class="btn btn-danger p-3">
+                  <i class="fa fa-undo fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -91,6 +119,6 @@
     ></script>
 
     <script src="count1.js"></script>
-    <script src="count2.js"></script>
+    <!-- <script src="count-dua.js"></script> -->
   </body>
 </html>
