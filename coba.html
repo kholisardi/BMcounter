@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Badminton Count</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css
+    "
+    /> -->
+    <!-- <link rel="stylesheet" href="css.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      body {
+        background-color: #0a6f34;
+      }
+
+      @media only screen and (orientation: portrait) {
+        /* .container-sm {
+          height: 100vw;
+          transform: rotate(90deg);
+          display: inline-flex;
+        }
+        .img-fluid {
+          max-width: 30vw;
+          max-height: 30vw;
+        } */
+        .col-sm {
+          rotate: 90deg;
+          height: 100vw;
+        }
+
+        #total-count {
+          font-size: xx-large;
+          height: 20vh;
+        }
+        #total-count1 {
+          font-size: 10vw;
+        }
+        .image {
+          width: 50vw;
+          height: 20vh;
+        }
+        .card {
+          height: 100vh;
+        }
+      }
+      #total-count {
+        font-size: 10vw;
+      }
+      #total-count1 {
+        font-size: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content-left">
+      <div class="row border border-danger">
+        <div class="col-sm border border-warning colom1">
+          <div class="card card1" style="width: 18rem">
+            <div id="increment-count">
+              <div class="d-grid border border-danger">
+                <button type="button" class="btn btn-primary p-3">
+                  <i class="fa fa-arrow-up fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              id="total-count"
+              class="box text-center fw-bold m-2 border border-danger"
+            ></div>
+            <div id="decrement-count">
+              <div class="d-grid border border-danger">
+                <button type="button" class="btn btn-warning p-3">
+                  <i class="fa fa-arrow-down fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="reset">
+              <div class="d-grid mt-2 border border-danger">
+                <button type="button" class="btn btn-danger p-3">
+                  <i class="fa fa-undo fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm border border-warning image">
+          <img src="img/vs.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-sm border border-warning">
+          <div class="card card2" style="width: 18rem">
+            <div id="increment-count1">
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary p-3">
+                  <i class="fa fa-arrow-up fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="total-count1" class="box1 text-center fw-bold m-2"></div>
+            <div id="decrement-count1">
+              <div class="d-grid">
+                <button type="button" class="btn btn-warning p-3">
+                  <i class="fa fa-arrow-down fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <div id="reset1">
+              <div class="d-grid mt-2">
+                <button type="button" class="btn btn-danger p-3">
+                  <i class="fa fa-undo fs-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="count1.js"></script>
+    <!-- <script src="count-dua.js"></script> -->
+  </body>
+</html>
